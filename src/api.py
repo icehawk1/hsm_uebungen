@@ -64,6 +64,16 @@ def verify(user_id):
     """Verifies given signature with users master key"""
     pass
 
+def create_hsm_cluster(peer_ip):
+    """Asks the given HSM to join this HSM in clustering mode"""
+    pass
+
+@as_json
+@app.route("/acceptcluster", methods=['POST'])
+def accept_hsm_cluster(peer_ip,dhe_params,auth):
+    """Accepts a request to join the calling HSM in clustering mode"""
+    pass
+
 def _create_user():
     pass
 
